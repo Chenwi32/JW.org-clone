@@ -37,55 +37,61 @@ a:hover {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   width: 100%;
-  height: 62px;
+  height: 91px;
+  padding: 0.5em 0;
 }
 
 .logo {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 
 .logo img {
-  width: 125px;
-  height: 100px;
+  width: 102px;
 }
 
 header p {
-  font-family: serif;
-  font-size: 2.3em;
+  font-family: sans-serif;
+  font-size: 1.45em;
 
-  margin-left: 3.5em;
+  margin-left: 4.9em;
   color: rgb(88, 88, 88);
 }
 
+.facilites {
+  margin-right: 2.6em;
+  padding: 0;
+}
+
 .facilites a {
-  padding: 0.7em 0.4em;
-  margin: 0 1em;
+  /*   padding: 0.7em 0.4em;
+  margin: 0.5em; */
+
   text-decoration: none;
   color: rgba(0, 55, 138, 0.63);
 
-  font-size: 1.1em;
-  font-family: "Roboto-Regular", cursive;
+  font-size: 0.8em;
+  font-weight: 100;
+  font-family: sans-serif;
 }
 
-.fa-user,
-.fa-language {
-  font-size: 1.3em;
-  margin: 0 0.2em;
+.facilites .header-links span {
+  font-size: 1.8em;
 
-  color: rgb(49, 49, 49);
+  color: rgb(102, 101, 101);
+  padding: 0.1em 0.4em;
 }
 
 .facilites input {
-  font-size: 1em;
-  width: 22rem;
-  height: 3rem;
+  font-size: 0.8em;
+  width: 265px;
+  height: 35px;
   margin-right: 0;
-  padding: 0.7em;
+  padding: 0.8em;
 
   border: 1px rgb(167, 165, 165) solid;
   border-bottom-left-radius: 5px;
@@ -93,18 +99,17 @@ header p {
 }
 
 .facilites button {
-  font-size: 0.3em;
-  width: 2.5rem;
-  height: 3rem;
-
-  margin-left: -0.8em;
-  margin-right: 2em;
-  padding: 0.7em;
+  font-size: 1.45em;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  padding: 0.1em;
 
   background-color: inherit;
 
-  border: 1px rgb(167, 165, 165) solid;
+  border: 1px rgb(141, 140, 140) solid;
   border-left: none;
+  color: rgb(128, 126, 126);
 
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
@@ -119,14 +124,21 @@ header p {
 /*///////////////// Navigation Menu ///////////////*/
 
 .nav-bar {
-  background-color: rgba(0, 0, 0, 0.822);
-  height: fit-content;
+  background-color: rgba(12, 11, 11, 0.794);
+  height: 43px;
   width: 100%;
+  line-height: 1.5;
+  position: absolute;
+  top: 48px;
+}
+
+.nav-bar .container {
+  position: relative;
 }
 
 .nav-bar ul {
-  margin-left: 8em;
-  height: 3.5rem;
+  margin-left: 6em;
+  position: inherit;
 
   display: flex;
   justify-content: flex-start;
@@ -139,8 +151,6 @@ header p {
   font-size: 1.1rem;
   font-family: "Roboto-Thin";
 
-  text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
   cursor: pointer;
 
@@ -150,11 +160,16 @@ header p {
 }
 
 .nav-bar ul li a {
-  font-size: 1em;
+  font-size: 0.7em;
+  font-family: sans-serif;
+  font-weight: 100;
+
   text-decoration: none;
+  text-transform: uppercase;
+
   color: #fff;
-  margin: 0.5rem;
-  padding: 1.5rem 1rem 0.8rem;
+  margin: 0.2rem;
+  padding: 0.95rem 1rem 0.8rem;
 }
 
 .nav-bar ul li a:hover {
@@ -165,6 +180,7 @@ header p {
 .nav-bar ul li .icon img {
   width: 32px;
   height: 25px;
+  margin: 0.1em;
 }
 
 .nav-bar ul li .web img {
@@ -179,28 +195,42 @@ main .container {
 }
 
 .trending {
-  background-image: url("../images/cover.jpg");
+  background-image: url("../images/502000193_univ_pnr_lg.jpg");
   background-repeat: no-repeat;
   background-position: 10%, 10%;
   background-size: 100% 100%;
 
-  height: 500px;
+  height: 380px;
   width: 100%;
 
-  padding-left: 7em;
+  /* padding-left: em; */
   padding-top: 6em;
-}
 
-.trending a {
-  color: #000;
-
-  font-size: 1.9em;
-  font-weight: 900;
-  font-family: "Roboto-Thin";
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .trending .trending-link {
-  width: 30%;
+  width: 960px;
+  height: 141px;
+  background-color: rgba(41, 41, 41, 0.918);
+  position: absolute;
+  padding: 1.5em;
+  top: 24.9em;
+}
+
+.trending h2 {
+  margin: 0 0 0.45em;
+}
+
+.trending h2 a {
+  color: #fff;
+
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: sans-serif;
 }
 
 .trending p {
@@ -215,7 +245,8 @@ main .container {
 .featured {
   width: 89%;
   margin: auto;
-  padding: 0.1em;
+  padding: 4.5em 0.1em 0.1em;
+  letter-spacing: 0.1em;
 }
 /*///////////// Feature Section Style /////////////*/
 
@@ -258,7 +289,7 @@ main .container {
 }
 .topic {
   height: 110px;
-  padding: 1.5rem;
+  padding: 1rem;
   position: relative;
 
   background-position: 100%;
@@ -274,21 +305,21 @@ main .container {
 
 .topic h3 {
   font-size: 1.2em;
-  font-family: "Roboto-Thin";
+  font-family: serif;
   font-weight: 100;
 
   color: #fff;
 
-  z-index: 1;
+  z-index: 10;
 }
 
 /* .topic */
 .overlay {
   position: absolute;
   background: linear-gradient(
-    360deg,
-    rgba(8, 8, 8, 0.836),
-    rgba(255, 255, 255, 0)
+    355deg,
+    rgba(27, 27, 27, 0.836) 10%,
+    transparent 100%
   );
   height: 100%;
   width: 100%;
@@ -326,8 +357,8 @@ main .container {
 /*///////////////// End Topics of Interest Styling /////////////////// */
 
 /*///////////////// Videos Section Styling /////////////////// */
-.videos {
-}
+/* .videos {
+} */
 
 /*///////////////// End Videos Section Styling /////////////////// */
 
