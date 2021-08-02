@@ -259,16 +259,36 @@ main .container {
 /*///////////////// Call To Action Styling /////////////////// */
 .cta {
   display: flex;
-  margin: 2.5em 0;
+  margin: 5em 0 3em;
+  position: relative;
 }
 
-.whats-new,
+.cta::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgb(212, 212, 212);
+  position: absolute;
+  top: 11em;
+  left: 0;
+}
+
 .read-bible {
-  margin: 2em;
+  margin: 1em 1.5em;
+}
+
+.whats-new {
+  width: 85%;
+  margin-left: 2.6em;
 }
 
 .whats-new p {
   font-size: 1.5em;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+
+  color: rgb(133, 133, 133);
 }
 
 .whats-new button {
@@ -277,8 +297,15 @@ main .container {
 
 .read-bible {
   margin: 0;
-  width: 50%;
+  width: 92%;
   display: flex;
+}
+
+.read-bible::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: rgb(212, 212, 212);
 }
 
 .read-bible img {
@@ -288,18 +315,24 @@ main .container {
 }
 
 .read-text {
-  padding: 0 1.1em;
+  padding: 0 0.5em 0 1em;
+  margin-right: 1.5em;
 }
 
-.read-text small {
-  font-size: 1.1em;
-  line-height: 1.2em;
+.read-text p {
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: 400;
+
+  padding: 0.4em 1em 0.4em 0;
+  line-height: 1.5em;
+  letter-spacing: 0;
 }
 /*///////////////// End Call To Action Styling /////////////////// */
 
 /*///////////////// Topics of Interest Styling /////////////////// */
 .topics {
-  margin: 1.5rem 0;
+  margin: 4.5em 0;
 }
 .topic {
   height: 110px;
@@ -327,6 +360,10 @@ main .container {
   z-index: 10;
 }
 
+.topics .grid-3 a {
+  color: #fff;
+}
+
 /* .topic */
 .overlay {
   position: absolute;
@@ -343,7 +380,11 @@ main .container {
 
 .topics-cta {
   width: 99%;
-  margin: auto;
+  margin: 1.5em auto;
+}
+
+.topics-cta .online-bs-text .secondary-links {
+  color: rgb(63, 111, 184);
 }
 
 .topics-cta .img {
@@ -354,7 +395,7 @@ main .container {
 .topics-cta .img img {
   border-radius: 50%;
 
-  width: 76%;
+  width: 73%;
 }
 
 .online-bs-text {
