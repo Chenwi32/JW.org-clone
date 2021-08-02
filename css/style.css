@@ -64,38 +64,39 @@ header p {
 
 .facilites {
   margin-right: 2.6em;
+  margin-bottom: 0.2em;
   padding: 0;
+  display: flex;
 }
 
 .facilites a {
-  /*   padding: 0.7em 0.4em;
-  margin: 0.5em; */
+  padding: 0.1em 0.2em;
 
   text-decoration: none;
-  color: rgba(0, 55, 138, 0.63);
+  color: rgba(0, 55, 138, 0.897);
 
-  font-size: 0.8em;
-  font-weight: 100;
-  font-family: sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  font-family: serif;
 }
 
 .facilites .header-links span {
-  font-size: 1.8em;
+  font-size: 1.7em;
 
   color: rgb(102, 101, 101);
-  padding: 0.1em 0.4em;
+  padding: 0.1em 0.3em 0.1em 0;
 }
 
 .facilites input {
   font-size: 0.8em;
   width: 265px;
   height: 35px;
-  margin-right: 0;
+  margin-left: 0.7em;
   padding: 0.8em;
 
   border: 1px rgb(167, 165, 165) solid;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 .facilites button {
@@ -103,6 +104,7 @@ header p {
   width: 35px;
   height: 35px;
   position: absolute;
+  right: 0.4em;
   padding: 0.1em;
 
   background-color: inherit;
@@ -111,25 +113,25 @@ header p {
   border-left: none;
   color: rgb(128, 126, 126);
 
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .facilites button:hover,
-.facilites a:hover {
-  background-color: rgba(0, 55, 138, 0.11);
+.facilites .header-links:hover {
+  background-color: rgba(0, 55, 138, 0.144);
 }
 /*///////////////// End Header ///////////////*/
 
 /*///////////////// Navigation Menu ///////////////*/
 
 .nav-bar {
-  background-color: rgba(12, 11, 11, 0.794);
+  background-color: rgba(14, 13, 13, 0.856);
   height: 43px;
   width: 100%;
   line-height: 1.5;
   position: absolute;
-  top: 48px;
+  top: 50px;
 }
 
 .nav-bar .container {
@@ -149,14 +151,17 @@ header p {
 
 .nav-bar ul li {
   font-size: 1.1rem;
-  font-family: "Roboto-Thin";
 
   color: #fff;
   cursor: pointer;
 
   height: fit-content;
 
-  margin-right: 0.1em;
+  margin-right: 0.7em;
+}
+
+.nav-bar ul li .header-links {
+  padding: 0.64em;
 }
 
 .nav-bar ul li a {
@@ -168,19 +173,20 @@ header p {
   text-transform: uppercase;
 
   color: #fff;
-  margin: 0.2rem;
-  padding: 0.95rem 1rem 0.8rem;
 }
 
-.nav-bar ul li a:hover {
+.nav-bar ul li .header-links:hover {
   background-color: black;
+}
+
+.nav-bar ul li .icon {
+  margin-right: 0.7em;
 }
 
 .nav-bar ul li .icon .fa-home,
 .nav-bar ul li .icon img {
-  width: 32px;
-  height: 25px;
-  margin: 0.1em;
+  width: 30px;
+  height: 22px;
 }
 
 .nav-bar ul li .web img {
@@ -261,6 +267,14 @@ main .container {
   margin: 2em;
 }
 
+.whats-new p {
+  font-size: 1.5em;
+}
+
+.whats-new button {
+  margin: 1em 0;
+}
+
 .read-bible {
   margin: 0;
   width: 50%;
@@ -269,17 +283,17 @@ main .container {
 
 .read-bible img {
   margin: 0;
-  width: 36.8%;
-  height: 153px;
+  width: 138px;
+  height: 140px;
 }
 
 .read-text {
-  padding: 0 1.5em;
+  padding: 0 1.1em;
 }
 
 .read-text small {
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.2em;
 }
 /*///////////////// End Call To Action Styling /////////////////// */
 
