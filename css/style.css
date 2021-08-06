@@ -231,14 +231,14 @@ main .container {
   color: #fff;
   position: absolute;
   padding: 1.5em;
-  top: 19.1em;
+  top: 19.5rem;
 }
 
-.trending h2 {
+.trending .trending-link h2 {
   margin: 0 0 0.5em;
 }
 
-.trending h2 a {
+.trending .trending-link h2 a {
   color: #fff;
 
   font-size: 1.4em;
@@ -246,19 +246,24 @@ main .container {
   font-family: sans-serif;
 }
 
-.trending p {
-  padding-bottom: 1.5em;
-  font-size: 1.3em;
+.trending .trending-link p {
+  padding-bottom: 1.8em;
+  font-size: 1.2em;
   font-family: sans-serif;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 /*///////////// Feature Section Style /////////////*/
 .featured {
   width: 89%;
   margin: 0 auto;
-  padding: 4.5em 0.1em 0;
+  padding: 7.5em 0.1em 0;
   letter-spacing: 0.1em;
+}
+
+.featured-items {
+  margin-top: 0;
 }
 /*///////////// Feature Section Style /////////////*/
 
@@ -388,7 +393,7 @@ main .container {
   margin: 1.5em auto 0;
 }
 
-.topics-cta .online-bs-text .secondary-links {
+.topics-cta .online-bs-text .primary-links {
   color: rgb(63, 111, 184);
 }
 
@@ -423,18 +428,22 @@ main .container {
 
 .videos .trending {
   background-repeat: no-repeat;
-  background-position: 55% 2%;
-  background-size: 115% 150%;
+  background-position: 55% 1%;
+  background-size: 110% 148%;
 }
 
 .videos .trending .trending-link {
   width: 833px;
-  background-color: #f2f2f2f3;
+  background-color: #f2f2f2ef;
   color: #000;
 }
 
-.videos .trending h2 a {
+.videos .trending .trending-link h2 a {
   color: #000;
+}
+
+.videos .featured-items {
+  margin-top: 12rem;
 }
 
 /*///////////////// Videos Section Styling /////////////////// */
