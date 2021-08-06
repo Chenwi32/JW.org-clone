@@ -1,8 +1,7 @@
 .container {
   max-width: 1400px;
-
   width: 1141px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .btn {
@@ -29,16 +28,11 @@
 
 .flex {
   display: flex;
-  /*justify-content: center;
-   align-items: center; */
-
-  margin: 0.5em;
 }
 .flex-col {
   display: flex;
   /* justify-content: center; */
   flex-direction: column;
-  margin: 0.5em;
 }
 
 .title {

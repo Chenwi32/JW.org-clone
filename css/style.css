@@ -10,7 +10,7 @@
 body,
 html {
   height: 100%;
-  background-color: rgb(236, 236, 236);
+  background-color: #eceae7;
 }
 
 img {
@@ -202,6 +202,7 @@ header p {
 /*///////////////// Main Section Styles ///////////////*/
 main .container {
   background-color: #fff;
+  box-shadow: 2px 2px 20px 20px rgba(0, 0, 0, 0.041);
 }
 
 .trending {
@@ -254,8 +255,8 @@ main .container {
 /*///////////// Feature Section Style /////////////*/
 .featured {
   width: 89%;
-  margin: auto;
-  padding: 4.5em 0.1em 0.1em;
+  margin: 0 auto;
+  padding: 4.5em 0.1em 0;
   letter-spacing: 0.1em;
 }
 /*///////////// Feature Section Style /////////////*/
@@ -424,5 +425,24 @@ main .container {
 /*///////////////// End Main Section Styles ///////////////*/
 
 /*////////////////// Footer Section Styling //////////////////*/
+footer {
+  background-color: #f0f0f0;
+  margin: -0.2em auto 0;
+  padding: 3.7em 2.5em;
+  width: 100%;
+  font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
+  font-size: 0.8298755187em;
+}
 
+footer .footer-links ul {
+  margin: 0 0.6em;
+}
+
+footer .footer-links ul li {
+  margin: 0.6em 0;
+}
+
+.copyright {
+  background-color: rgb(55, 52, 51);
+}
 /*////////////////// End Footer Section Styling //////////////////*/
