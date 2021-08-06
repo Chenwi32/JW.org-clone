@@ -1,6 +1,6 @@
 .container {
   max-width: 1400px;
-  width: 1141px;
+  width: 83%;
   margin: 0 auto;
 }
 
@@ -39,6 +39,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5em;
   margin: 2.5em 0;
+  flex-wrap: wrap;
 }
 
 .flex {

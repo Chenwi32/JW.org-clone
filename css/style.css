@@ -225,7 +225,7 @@ main .container {
 }
 
 .trending .trending-link {
-  width: 960px;
+  width: 84%;
   height: fit-content;
   background-color: rgba(41, 41, 41, 0.918);
   color: #fff;
