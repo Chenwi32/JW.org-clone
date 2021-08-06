@@ -206,7 +206,6 @@ main .container {
 }
 
 .trending {
-  background-image: url("../images/502000193_univ_pnr_lg.jpg");
   background-repeat: no-repeat;
   background-position: 10%, 10%;
   background-size: 100% 100%;
@@ -221,19 +220,22 @@ main .container {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
+  position: relative;
 }
 
 .trending .trending-link {
   width: 960px;
-  height: 141px;
+  height: fit-content;
   background-color: rgba(41, 41, 41, 0.918);
+  color: #fff;
   position: absolute;
   padding: 1.5em;
-  top: 24.9em;
+  top: 19.1em;
 }
 
 .trending h2 {
-  margin: 0 0 0.45em;
+  margin: 0 0 0.5em;
 }
 
 .trending h2 a {
@@ -245,10 +247,9 @@ main .container {
 }
 
 .trending p {
-  padding-top: 0.3em;
-  font-size: 1.5em;
-  color: #000;
-  font-family: "Roboto-Regular";
+  padding-bottom: 1.5em;
+  font-size: 1.3em;
+  font-family: sans-serif;
   font-weight: 500;
 }
 
@@ -330,8 +331,7 @@ main .container {
   font-weight: 400;
 
   padding: 0.4em 1em 0.4em 0;
-  line-height: 1.5em;
-  letter-spacing: 0;
+  line-height: 1.5;
 }
 /*///////////////// End Call To Action Styling /////////////////// */
 
@@ -385,7 +385,7 @@ main .container {
 
 .topics-cta {
   width: 99%;
-  margin: 1.5em auto;
+  margin: 1.5em auto 0;
 }
 
 .topics-cta .online-bs-text .secondary-links {
@@ -400,29 +400,54 @@ main .container {
 .topics-cta .img img {
   border-radius: 50%;
 
-  width: 73%;
+  width: 70%;
 }
 
 .online-bs-text {
   text-align: center;
-  margin: 1.5em 0;
+  margin: 1.3em 0 0;
 }
 
 .online-bs-text p {
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: sans-serif;
   font-weight: 100;
-  padding: 1.3em 0;
+  padding: 1rem 0 0.5rem;
+  line-height: 1.5;
 }
 /*///////////////// End Topics of Interest Styling /////////////////// */
+.videos .flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.videos .trending {
+  background-repeat: no-repeat;
+  background-position: 55% 2%;
+  background-size: 115% 150%;
+}
+
+.videos .trending .trending-link {
+  width: 833px;
+  background-color: #f2f2f2f3;
+  color: #000;
+}
+
+.videos .trending h2 a {
+  color: #000;
+}
 
 /*///////////////// Videos Section Styling /////////////////// */
-/* .videos {
-} */
 
 /*///////////////// End Videos Section Styling /////////////////// */
 
-/*///////////////// End Main Section Styles ///////////////*/
+.about-jws-container h1 {
+  font-size: 2.5405938038em;
+  font-weight: 700;
+  font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
+
+  margin-bottom: 0.25em;
+}
 
 /*////////////////// Footer Section Styling //////////////////*/
 footer {
@@ -446,3 +471,5 @@ footer .footer-links ul li {
   background-color: rgb(55, 52, 51);
 }
 /*////////////////// End Footer Section Styling //////////////////*/
+
+/*///////////////// End Main Section Styles ///////////////*/

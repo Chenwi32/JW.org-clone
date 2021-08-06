@@ -7,8 +7,8 @@
 .btn {
   background-color: rgb(74, 109, 167);
   color: #fff;
-  padding: 0.6em;
-  font-size: 1.15em;
+  padding: 0.4rem;
+  font-size: 1.1rem;
   font-weight: 100;
   font-family: sans-serif;
   border: none;
@@ -52,8 +52,9 @@
 }
 
 .secondary-links {
-  color: rgb(63, 111, 184);
-  font-size: 1.5rem;
+  color: #4a6da7;
+  font-size: 1.4rem;
+  font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
   /*   margin: 5em 0; */
 }
 
