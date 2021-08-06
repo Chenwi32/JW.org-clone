@@ -27,6 +27,20 @@
   margin: 2.5em 0;
 }
 
+.flex {
+  display: flex;
+  /*justify-content: center;
+   align-items: center; */
+
+  margin: 0.5em;
+}
+.flex-col {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin: 0.5em;
+}
+
 .title {
   font-family: sans-serif;
   font-size: 1.7em;

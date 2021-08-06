@@ -23,6 +23,10 @@ a:hover {
   text-decoration: underline;
 }
 
+li {
+  list-style: none;
+}
+
 /*///////////////// Header ///////////////*/
 
 .header {
@@ -418,3 +422,7 @@ main .container {
 /*///////////////// End Videos Section Styling /////////////////// */
 
 /*///////////////// End Main Section Styles ///////////////*/
+
+/*////////////////// Footer Section Styling //////////////////*/
+
+/*////////////////// End Footer Section Styling //////////////////*/
