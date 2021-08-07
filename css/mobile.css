@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  min-width: none;
 }
 
 /*//////////// Header //////////*/
@@ -22,6 +23,14 @@ header p {
   margin: 0.8rem;
   margin-left: 4.9rem;
 }
+
+.facilites input {
+  font-size: 0.8em;
+  width: 165px;
+  height: 35px;
+  margin-left: 0.7em;
+  padding: 0.8em;
+}
 /*/ /////////// End Header //////////*/
 
 /*/////////////// Navbar /////////////*/
@@ -29,4 +38,22 @@ header p {
   height: 43px;
   top: 55px;
 }
+
+.nav-bar ul {
+  margin-left: 0;
+  justify-content: space-between;
+}
 /*/ ////////////// End Navbar /////////////*/
+
+/*//////////////// Trending ///////////////*/
+.trending .trending-link {
+  width: 90%;
+}
+/*/ /////////////// End Trending ///////////////*/
+
+/*////////////////// Feature /////////////////*/
+.featured {
+  width: 93.5%;
+  padding: 11em 0.1em 0;
+}
+/*/ ///////////////// End Feature /////////////////*/

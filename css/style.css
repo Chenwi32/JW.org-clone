@@ -104,8 +104,9 @@ header p {
 }
 
 .facilites input:focus {
-  outline: 1px solid steelblue;
-  /* border: 1px solid rgb(71, 125, 177); */
+  outline: none;
+  border: 1px solid rgb(71, 125, 177);
+  box-shadow: 0 0 2px 2px rgba(80, 144, 204, 0.377);
 }
 
 .facilites button {
@@ -263,7 +264,7 @@ main .container {
 .featured {
   width: 89%;
   margin: 0 auto;
-  padding: 7.5em 0.1em 0;
+  padding: 8em 0.1em 0;
   letter-spacing: 0.1em;
 }
 
@@ -275,8 +276,9 @@ main .container {
 /*///////////////// Call To Action Styling /////////////////// */
 .cta {
   display: flex;
-  margin: 5em 0 3em;
+  margin: 5em 0 1em;
   position: relative;
+  height: fit-content;
 }
 
 .cta::after {
@@ -285,7 +287,7 @@ main .container {
   width: 100%;
   background-color: rgb(212, 212, 212);
   position: absolute;
-  top: 11em;
+  top: 70%;
   left: 0;
 }
 
@@ -294,7 +296,7 @@ main .container {
 }
 
 .whats-new {
-  width: 85%;
+  width: fit-content;
   margin-left: 2.6em;
 }
 
@@ -313,21 +315,22 @@ main .container {
 
 .read-bible {
   margin: 0;
-  width: 92%;
+  width: fit-content;
   display: flex;
 }
 
 .read-bible::after {
   content: "";
-  height: 100%;
+  height: 60%;
+
   width: 1px;
   background-color: rgb(212, 212, 212);
 }
 
 .read-bible img {
   margin: 0;
-  width: 138px;
-  height: 140px;
+  width: 50%;
+  height: 55%;
 }
 
 .read-text {
@@ -347,7 +350,7 @@ main .container {
 
 /*///////////////// Topics of Interest Styling /////////////////// */
 .topics {
-  margin: 4.5em 0;
+  margin: 1em 0;
 }
 .topic {
   height: 110px;
@@ -531,6 +534,10 @@ footer .footer-links ul li a {
   align-items: center;
 
   height: 55px;
+}
+
+.copyright .container .flex {
+  margin: 0.5em;
 }
 
 .copyright .container .flex a {
