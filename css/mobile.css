@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+}
+
+/*//////////// Header //////////*/
+header {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 95px;
+  padding: 0.5em 0;
+}
+
+.logo img {
+  width: 72px;
+  height: 55px;
+}
+
+header p {
+  font-size: 1em;
+  margin: 0.8rem;
+  margin-left: 4.9rem;
+}
+/*/ /////////// End Header //////////*/
+
+/*/////////////// Navbar /////////////*/
+.nav-bar {
+  height: 43px;
+  top: 55px;
+}
+/*/ ////////////// End Navbar /////////////*/

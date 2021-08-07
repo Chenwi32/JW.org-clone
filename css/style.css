@@ -103,6 +103,11 @@ header p {
   border-top-left-radius: 3px;
 }
 
+.facilites input:focus {
+  outline: 1px solid steelblue;
+  /* border: 1px solid rgb(71, 125, 177); */
+}
+
 .facilites button {
   font-size: 1.45em;
   width: 35px;
@@ -449,35 +454,92 @@ main .container {
 /*///////////////// Videos Section Styling /////////////////// */
 
 /*///////////////// End Videos Section Styling /////////////////// */
+/* .about-jws-container {
+
+} */
+
+.about-jws {
+  margin-top: 1.5rem;
+}
 
 .about-jws-container h1 {
   font-size: 2.5405938038em;
-  font-weight: 700;
-  font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
+  font-weight: 600;
+  font-family: sans-serif;
 
   margin-bottom: 0.25em;
 }
 
+.about {
+  width: 72%;
+  margin-right: 1.5rem;
+}
+
+.about p {
+  font-size: 1.1em;
+  font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
+  font-weight: 100;
+
+  line-height: 1.6;
+
+  margin-bottom: 1em;
+  padding-right: 0.6rem;
+}
+
+.about-links a div {
+  margin: 1em 0;
+}
+
 /*////////////////// Footer Section Styling //////////////////*/
 footer {
-  background-color: #f0f0f0;
-  margin: -0.2em auto 0;
-  padding: 3.7em 2.5em;
   width: 100%;
   font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
   font-size: 0.8298755187em;
 }
 
-footer .footer-links ul {
-  margin: 0 0.6em;
+footer .container {
+  background-color: #f0f0f0;
+
+  padding: 0 3em;
+}
+
+footer .container .present {
+  background-color: #f0f0f0;
+
+  padding: 3.5em 0 0;
+}
+
+footer .container .footer-links {
+  margin: 1.5em 0;
+}
+
+footer .container .footer-links ul {
+  margin-right: 2em;
 }
 
 footer .footer-links ul li {
   margin: 0.6em 0;
 }
 
-.copyright {
+footer .footer-links ul li a {
+  line-height: 1.25;
+}
+
+.copyright .container {
   background-color: rgb(55, 52, 51);
+  justify-content: center;
+  align-items: center;
+
+  height: 55px;
+}
+
+.copyright .container .flex a {
+  color: #c2d1ec;
+  padding: 0 0.5em;
+}
+
+.copyright .container .flex p {
+  color: #fff;
 }
 /*////////////////// End Footer Section Styling //////////////////*/
 

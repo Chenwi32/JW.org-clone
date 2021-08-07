@@ -17,43 +17,12 @@
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <style type="text/css">
-      @font-face {
-        font-weight: 400;
-        font-style: normal;
-        font-family: "Circular-Loom";
-
-        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
-          format("woff2");
-      }
-
-      @font-face {
-        font-weight: 500;
-        font-style: normal;
-        font-family: "Circular-Loom";
-
-        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
-          format("woff2");
-      }
-
-      @font-face {
-        font-weight: 700;
-        font-style: normal;
-        font-family: "Circular-Loom";
-
-        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
-          format("woff2");
-      }
-
-      @font-face {
-        font-weight: 900;
-        font-style: normal;
-        font-family: "Circular-Loom";
-
-        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
-          format("woff2");
-      }
-    </style>
+    <!-- Mobile style sheet -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:959px)"
+      href="./css/mobile.css"
+    />
   </head>
   <body>
     <!--///////////////////// Header ////////////////////-->
@@ -524,8 +493,9 @@
 
         <img src="./images/home-bottom.jpg" alt="" />
         <!--//////////////////// Footer ////////////////-->
-        <footer class="flex-col">
-          <!-- <div class="container"> -->
+      </div>
+      <footer class="flex-col">
+        <div class="container">
           <div class="present">
             <p>
               <span> JW.ORG<sup>®</sup> </span>
@@ -692,20 +662,23 @@
               </div>
             </div>
           </div>
-          <div class="copyright flex">
+        </div>
+        <div class="copyright flex">
+          <div class="container flex">
             <div class="flex">
-              <span><a href="">Copyright</a> &copy; </span>
-              <p>2021 Watch Tower Bible and Tract Society of Pennsylvania.</p>
+              <span><a href="">Copyright </a></span>
+              <p>
+                &copy; 2021 Watch Tower Bible and Tract Society of Pennsylvania.
+              </p>
             </div>
             <div class="flex">
               <a href="">TERMS OF USE</a>
-              |
+              <p>|</p>
               <a href="">PRIVACY POLICY</a>
             </div>
           </div>
-          <!-- </div> -->
-        </footer>
-      </div>
+        </div>
+      </footer>
     </main>
 
     <!--///////////////////// End Main Section ////////////////////-->
