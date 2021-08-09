@@ -1,3 +1,4 @@
+/*//////////// Utilities ////////////*/
 .container {
   width: 100%;
   min-width: none;
@@ -34,7 +35,9 @@ header p {
 /*/ /////////// End Header //////////*/
 
 /*/////////////// Navbar /////////////*/
+
 .nav-bar {
+  background-color: rgb(55, 52, 51);
   height: 43px;
   top: 55px;
 }
@@ -57,3 +60,115 @@ header p {
   padding: 11em 0.1em 0;
 }
 /*/ ///////////////// End Feature /////////////////*/
+
+/*///////////////// Call To Action Styling /////////////////// */
+.cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.read-bible {
+  margin: 0;
+  width: fit-content;
+  display: flex;
+
+  padding: 2em 0;
+
+  border-top: 1px solid rgba(55, 52, 51, 0.267);
+  border-bottom: 1px solid rgba(55, 52, 51, 0.267);
+}
+
+.read-bible img {
+  margin: 0;
+  width: 30%;
+}
+
+.whats-new {
+  width: fit-content;
+  margin: 2em 0;
+
+  width: 100%;
+}
+
+/*/ //////////////// End Call To Action Styling /////////////////// */
+
+/*/ //////////////// Topic Call To Action Styling /////////////////// */
+
+.topics .grid-3 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.topics .cta-grid-3 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.topics-cta {
+  display: flex;
+  width: 99%;
+  margin: 1em auto 0;
+}
+
+.topics-cta .img {
+  text-align: start;
+  width: 40%;
+}
+
+.topics-cta .img img {
+  width: 85%;
+}
+
+.topics-cta .r-img {
+  width: 35%;
+}
+
+.topics-cta .r-img img {
+  width: 85%;
+}
+
+.online-bs-text {
+  text-align: start;
+  margin: 1.3em 0 0;
+}
+
+/*/ //////////////// End Topic Call To Action Styling /////////////////// */
+
+/*///////////// Videos Section Style /////////////*/
+
+/*///////////// End Videos Section Style /////////////*/
+
+/*/ //////////////// Footer Styling /////////////////// */
+footer .container > .flex {
+  flex-direction: column;
+  margin: 1.5em 0 0;
+}
+
+.copyright .container {
+  flex-direction: column;
+  margin-top: 1em;
+  padding: 1em 0;
+  height: fit-content;
+}
+
+.copyright .container .flex {
+  flex-direction: column;
+  margin: 0.2em auto;
+}
+/*/ //////////////// End Footer Styling /////////////////// */
+
+/*//////////////// Media Query ////////////////////////*/
+@media screen, (max-width: 759px) {
+  /*///////////// Feature Section Style /////////////*/
+
+  .featured-items {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+  }
+  /*///////////// End Feature Section Style /////////////*/
+
+  /*///////////// Videos Section Style /////////////*/
+
+  .more-videos {
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: scroll;
+  }
+  /*///////////// End Videos Section Style /////////////*/
+}

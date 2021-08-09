@@ -136,7 +136,7 @@ header p {
 /*///////////////// Navigation Menu ///////////////*/
 
 .nav-bar {
-  background-color: rgba(14, 13, 13, 0.856);
+  background-color: rgba(55, 52, 51, 0.891);
   height: 43px;
   width: 100%;
   line-height: 1.5;
@@ -264,39 +264,33 @@ main .container {
 .featured {
   width: 89%;
   margin: 0 auto;
-  padding: 8em 0.1em 0;
+  padding: 8.5em 0.1em 0;
   letter-spacing: 0.1em;
 }
 
 .featured-items {
   margin-top: 0;
 }
-/*///////////// Feature Section Style /////////////*/
+/*///////////// End Feature Section Style /////////////*/
 
 /*///////////////// Call To Action Styling /////////////////// */
 .cta {
   display: flex;
-  margin: 5em 0 1em;
+
   position: relative;
+
+  margin: 5em 0 0;
+  padding: 0;
+
   height: fit-content;
-}
 
-.cta::after {
-  content: "";
-  height: 1px;
-  width: 100%;
-  background-color: rgb(212, 212, 212);
-  position: absolute;
-  top: 70%;
-  left: 0;
-}
-
-.read-bible {
-  margin: 1em 1.5em;
+  border-bottom: 1px solid rgba(55, 52, 51, 0.267);
 }
 
 .whats-new {
   width: fit-content;
+
+  margin: 0;
   margin-left: 2.6em;
 }
 
@@ -310,13 +304,15 @@ main .container {
 }
 
 .whats-new button {
-  margin: 1em 0;
+  margin: 1em 0 0;
 }
 
 .read-bible {
   margin: 0;
   width: fit-content;
   display: flex;
+
+  margin: 1em 0 0;
 }
 
 .read-bible::after {
@@ -353,13 +349,13 @@ main .container {
   margin: 1em 0;
 }
 .topic {
-  height: 110px;
+  height: 125px;
   padding: 1rem;
   position: relative;
 
-  background-position: 100%;
+  background-position: 100% 10%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 115%;
 
   cursor: pointer;
 
@@ -386,9 +382,9 @@ main .container {
 .overlay {
   position: absolute;
   background: linear-gradient(
-    355deg,
-    rgba(27, 27, 27, 0.836) 10%,
-    transparent 100%
+    360deg,
+    rgba(0, 0, 0, 0.678) 10%,
+    rgba(255, 255, 255, 0.021) 90%
   );
   height: 100%;
   width: 100%;
@@ -454,6 +450,35 @@ main .container {
   margin-top: 12rem;
 }
 
+.more-videos {
+  padding: 0 0 2em;
+  border-bottom: 1px solid rgba(55, 52, 51, 0.267);
+
+  overflow-x: hidden;
+}
+
+.more-videos .featured-item .img {
+  position: relative;
+}
+
+.more-videos .featured-item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.more-videos .featured-item .img::after {
+  content: "";
+  background: url("../images/icons/play-button.png") no-repeat;
+  background-size: 50%;
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  bottom: 0.2em;
+  left: 0.05em;
+  background-color: rgba(0, 0, 0, 0.76);
+  color: #fff;
+}
 /*///////////////// Videos Section Styling /////////////////// */
 
 /*///////////////// End Videos Section Styling /////////////////// */
@@ -512,19 +537,19 @@ footer .container .present {
   padding: 3.5em 0 0;
 }
 
-footer .container .footer-links {
-  margin: 1.5em 0;
+footer .container .flex {
+  margin: 1.5em 0 0;
 }
 
-footer .container .footer-links ul {
+footer .container .flex .footer-links ul {
   margin-right: 2em;
 }
 
-footer .footer-links ul li {
+footer .container .flex .footer-links ul li {
   margin: 0.6em 0;
 }
 
-footer .footer-links ul li a {
+footer .container .flex .footer-links ul li a {
   line-height: 1.25;
 }
 
@@ -537,7 +562,7 @@ footer .footer-links ul li a {
 }
 
 .copyright .container .flex {
-  margin: 0.5em;
+  margin: 0 0.5em 0.5em;
 }
 
 .copyright .container .flex a {
