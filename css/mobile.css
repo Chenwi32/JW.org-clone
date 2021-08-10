@@ -155,7 +155,59 @@ footer .container > .flex {
 /*/ //////////////// End Footer Styling /////////////////// */
 
 /*//////////////// Media Query ////////////////////////*/
-@media screen, (max-width: 759px) {
+@media (max-width: 759px) {
+  /*/////////////  Header Style /////////////*/
+  .desk-top-menu,
+  .mobile-menu,
+  .header {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .nav-bar {
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav-bar .container nav .mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-bar .container nav .mobile-nav .buttons {
+    margin: auto 0.85em 0.95em;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-bar .container nav .mobile-nav .buttons span {
+    color: #f0f0f0;
+    font-size: 1.47em;
+    cursor: pointer;
+  }
+
+  .nav-bar .container nav .mobile-nav .buttons .search {
+    margin: 0 0.87em;
+  }
+
+  .logo {
+    position: relative;
+    width: 8.7%;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 50px;
+  }
+
+  /*///////////// End Header Style /////////////*/
+
   /*///////////// Feature Section Style /////////////*/
 
   .featured-items {
@@ -171,4 +223,56 @@ footer .container > .flex {
     overflow-x: scroll;
   }
   /*///////////// End Videos Section Style /////////////*/
+
+  /*///////////// About JWs Section Style /////////////*/
+
+  .about-jws {
+    flex-direction: column;
+  }
+  /*///////////// End About JWs Section Style /////////////*/
+
+  /*///////////// Footer Section Style /////////////*/
+
+  footer .container .flex .footer-links {
+    display: none;
+  }
+  /*///////////// End Footer Section Style /////////////*/
 }
+
+/*////////////////// Phone Media Q ///////////////////////*/
+
+@media (max-width: 519px) {
+  /*//////////// Trending /////////////////*/
+  .trending .trending-link {
+    width: 95%;
+  }
+  /*//////////// End Trending /////////////////*/
+
+  /*//////////// Topics /////////////////*/
+  .topics-cta {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topics-cta .img {
+    width: 55%;
+  }
+  /*//////////// End Topics /////////////////*/
+
+  /*//////////// Videos /////////////////*/
+  .videos .trending .trending-link {
+    width: 90%;
+  }
+  /*//////////// End Videos /////////////////*/
+
+  /*//////////// End Footer /////////////////*/
+
+  footer .container .flex .quick-links .applications,
+  footer .container .flex .quick-links .support {
+    flex-direction: column;
+  }
+
+  /*//////////// Footer /////////////////*/
+}
+
+/*////////////////// Phone Media Q ///////////////////////*/
