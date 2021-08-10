@@ -57,7 +57,7 @@ header p {
 /*////////////////// Feature /////////////////*/
 .featured {
   width: 93.5%;
-  padding: 11em 0.1em 0;
+  padding: 11rem 0.1em 0;
 }
 /*/ ///////////////// End Feature /////////////////*/
 
@@ -171,7 +171,7 @@ footer .container > .flex {
     height: 50px;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 100;
   }
 
   .nav-bar .container nav .mobile-nav {
@@ -202,7 +202,7 @@ footer .container > .flex {
   }
 
   .logo img {
-    width: 100%;
+    width: 65px;
     height: 50px;
   }
 
@@ -210,11 +210,25 @@ footer .container > .flex {
 
   /*///////////// Feature Section Style /////////////*/
 
+  .videos .featured-items {
+    width: 93.5%;
+    padding: 6rem 0.1rem 0;
+  }
+
+  .featured {
+    width: 93.5%;
+    padding: 15rem 0.1rem 0;
+  }
+
   .featured-items {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
   }
   /*///////////// End Feature Section Style /////////////*/
+
+  /*///////////// Topics Section Style /////////////*/
+
+  /*///////////// End Topics Section Style /////////////*/
 
   /*///////////// Videos Section Style /////////////*/
 
@@ -253,6 +267,10 @@ footer .container > .flex {
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .topics .grid-3 a {
+    margin-top: 0.5em;
+  }
+
   .topics-cta {
     display: flex;
     flex-direction: column;
@@ -261,11 +279,39 @@ footer .container > .flex {
   }
 
   .topics-cta .img {
-    width: 55%;
+    width: 70%;
+  }
+  .topics-cta .img img {
+    width: 100%;
   }
   /*//////////// End Topics /////////////////*/
 
   /*//////////// Videos /////////////////*/
+  .videos .featured-items {
+    width: 93.5%;
+    padding: 10rem 0.1em 0;
+  }
+
+  .featured {
+    width: 93.5%;
+    padding: 18rem 0.1em 0;
+  }
+
+  .videos .trending {
+    background-repeat: no-repeat;
+    background-position: 55% 10%;
+    background-size: 100% 100%;
+  }
+
+  .more-videos .featured-item .img {
+    width: 19rem;
+    position: relative;
+  }
+  /*   .more-videos .featured-item .img img {
+    width: 100%;
+    position: relative;
+  } */
+
   .videos .trending .trending-link {
     width: 90%;
   }
@@ -278,7 +324,29 @@ footer .container > .flex {
     flex-direction: column;
   }
 
+  footer .container {
+    background-color: #f0f0f0;
+
+    padding: 0 1em;
+  }
+
+  .copyright .container .flex {
+    text-align: center;
+  }
   /*//////////// Footer /////////////////*/
+}
+
+@media (max-width: 329px) {
+  /*//////////// Videos /////////////////*/
+  .featured {
+    width: 93.5%;
+    padding: 23rem 0.1em 0;
+  }
+
+  .videos .featured-items {
+    width: 93.5%;
+    padding: 17rem 0.1em 0;
+  }
 }
 
 /*////////////////// Phone Media Q ///////////////////////*/
