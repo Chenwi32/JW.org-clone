@@ -363,7 +363,7 @@ footer .container > .flex {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .topics .grid-3 a {
+  .topics .grid-3 a div {
     margin-top: 0.5em;
   }
 
