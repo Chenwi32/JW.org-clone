@@ -166,6 +166,17 @@ footer .container > .flex {
 @media (max-width: 759px) {
   /*/////////////  Header Style /////////////*/
 
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: -2;
+  }
+
   .nav-bar .container nav {
     width: 100%;
     display: flex;
@@ -174,7 +185,6 @@ footer .container > .flex {
   }
 
   .desk-top-menu,
-  .mobile-menu,
   .header {
     display: none;
   }
@@ -229,6 +239,7 @@ footer .container > .flex {
     width: 65%;
     top: 50px;
     right: 0;
+    transition: all 300ms ease-in-out;
   }
 
   .mobile-menu ul {
@@ -363,7 +374,7 @@ footer .container > .flex {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .topics .grid-3 a div {
+  .topics .grid-3 a {
     margin-top: 0.5em;
   }
 
@@ -451,10 +462,10 @@ footer .container > .flex {
 }
 
 .hide {
+  right: -35rem;
+}
+.hide-2 {
   display: none;
 }
 
-.show {
-  display: block;
-}
 /*////////////////// Phone Media Q ///////////////////////*/
