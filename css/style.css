@@ -557,6 +557,20 @@ footer .container .flex .footer-links ul li a {
   line-height: 1.25;
 }
 
+footer .p-links .flex {
+  align-items: flex-end;
+  width: fit-content;
+}
+
+footer .p-links .flex .icon img {
+  margin: 0 0.9em;
+}
+
+.support .flex-col li,
+.applications .flex-col li {
+  margin: 0.5em;
+}
+
 .copyright .container {
   background-color: rgb(55, 52, 51);
   justify-content: center;

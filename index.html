@@ -213,7 +213,7 @@
                   ></path>
                 </svg>
               </span>
-              <span>
+              <span id="btn">
                 <svg
                   class="svg-inline--fa jwi-menu fa-w-16"
                   aria-hidden="true"
@@ -236,7 +236,7 @@
 
           <!--//////////////// Menu //////////////////-->
           <div class="mobile-menu">
-            <ul>
+            <ul class="flex-col">
               <li>
                 <a href="">
                   <span class="header-links">
@@ -282,6 +282,32 @@
                       <img src="./images/icons/aboutUs.png" alt="" />
                     </span>
                     <span class="nav-text">About us</span>
+                  </span>
+                </a>
+              </li>
+
+              <li class="login">
+                <a href="">
+                  <span class="header-links">
+                    <span class="icon">
+                      <svg
+                        class="svg-inline--fa jwi-profile fa-w-16"
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="jwf-jw-icons"
+                        data-icon="profile"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        data-fa-i2svg=""
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M18 18.462a.5.5 0 01-.5-.5v-2.009l-4.293-2.298a.5.5 0 01-.264-.44v-1.093a.503.503 0 01.078-.268l1.316-2.067V7.096a3.06 3.06 0 00-2.312-1.634.11.11 0 00-.025 0 .5.5 0 01-.005-1h.032c2.079 0 3.21 2.184 3.257 2.278a.501.501 0 01.053.226v2.967a.503.503 0 01-.078.268l-1.316 2.067v.647l4.293 2.298a.5.5 0 01.264.44v2.309a.5.5 0 01-.5.5z M6 18.46a.5.5 0 01-.5-.5v-2.307a.5.5 0 01.264-.44l4.293-2.298v-.647L8.741 10.2a.503.503 0 01-.078-.268V6.966a.501.501 0 01.053-.226c.048-.094 1.185-2.256 3.29-2.278a.5.5 0 01.494.506.51.51 0 01-.505.494h-.02a3.039 3.039 0 00-2.312 1.633v2.692l1.316 2.067a.503.503 0 01.078.268v1.093a.5.5 0 01-.264.44L6.5 15.953v2.007a.5.5 0 01-.5.5z M12 23a11 11 0 1111-11 11.012 11.012 0 01-11 11zm0-21a10 10 0 1010 10A10.011 10.011 0 0012 2z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="nav-text"> Log In </span>
                   </span>
                 </a>
               </li>
@@ -595,9 +621,9 @@
                   <a href="" class="p-links">Jehovah</a>, the God of the Bible
                   and the Creator of all things. We do our best to imitate
                   <a href="" class="p-links">Jesus Christ</a> and are proud to
-                  be called Christians. Each of us regularly spend time helping
-                  people learn about the Bible and
-                  <a href="" class="p-links">God's Kingdom</a>. Because we
+                  be called <a href="" class="p-links">Christians</a>. Each of
+                  us regularly spend time helping people learn about the Bible
+                  and <a href="" class="p-links">God's Kingdom</a>. Because we
                   witness, or talk, about Jehovah God and his Kingdom, we are
                   known as <a href="" class="p-links">Jehovah's Witnesses</a>.
                 </p>
@@ -834,6 +860,9 @@
     </main>
 
     <!--///////////////////// End Main Section ////////////////////-->
+
+    <!-- Main JS -->
+    <script src="./js/man.js"></script>
 
     <!-- Font Awesome Script -->
     <script src="/js/all.min.js"></script>
