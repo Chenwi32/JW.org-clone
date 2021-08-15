@@ -1,6 +1,6 @@
 const menuBtn = document.getElementById("btn");
 const menu = document.querySelector(".mobile-menu");
-const overlay = document.querySelector(".overlay");
+const overlay = document.querySelector(".overlay-2");
 
 console.log(menuBtn);
 menuBtn.addEventListener("click", () => {

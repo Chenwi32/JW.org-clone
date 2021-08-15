@@ -563,12 +563,14 @@ footer .p-links .flex {
 }
 
 footer .p-links .flex .icon img {
-  margin: 0 0.9em;
+  margin: 0 0.9em 0 0;
 }
 
-.support .flex-col li,
-.applications .flex-col li {
-  margin: 0.5em;
+/* .support {
+} */
+.support ul li,
+.applications ul li {
+  margin: 0;
 }
 
 .copyright .container {
