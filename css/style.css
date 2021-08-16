@@ -351,9 +351,11 @@ main .container {
 /*///////////////// Topics of Interest Styling /////////////////// */
 .topics {
   margin: 1em 0;
+  border-bottom: 1px solid rgba(55, 52, 51, 0.267);
 }
 .topic {
-  height: 120px;
+  height: 100%;
+  min-height: 120px;
   padding: 1rem;
   position: relative;
 
@@ -383,20 +385,8 @@ main .container {
 }
 
 /* .topic */
-.overlay {
-  position: absolute;
-  background: linear-gradient(
-    360deg,
-    rgba(0, 0, 0, 0.678) 10%,
-    rgba(255, 255, 255, 0.021) 90%
-  );
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
 
-.topics-cta {
+*/ .topics-cta {
   width: 99%;
   margin: 1.5em auto 0;
 }
@@ -418,7 +408,7 @@ main .container {
 
 .online-bs-text {
   text-align: center;
-  margin: 1.3em 0 0;
+  margin: 1rem 0 0;
 }
 
 .online-bs-text p {
@@ -457,17 +447,35 @@ main .container {
 .more-videos {
   padding: 0 0 2em;
   border-bottom: 1px solid rgba(55, 52, 51, 0.267);
+  /* display: -webkit-box; */
 
   overflow-x: hidden;
+  width: auto !important;
+
+  -webkit-transform: none !important;
+  transform: translate3d(0px, 0px, 0px);
+
+  flex-wrap: nowrap;
+}
+
+.more-videos .featured-item {
+  margin: 0.7em;
+  min-height: 215px;
 }
 
 .more-videos .featured-item .img {
+  width: 100%;
+  height: 100%;
+
   position: relative;
 }
 
 .more-videos .featured-item .img img {
   width: 100%;
   height: 100%;
+  min-height: 90px;
+  min-width: 180px;
+  margin-bottom: 0.5rem;
 }
 
 .more-videos .featured-item .img::after {
@@ -478,7 +486,7 @@ main .container {
   height: 40px;
   width: 40px;
   position: absolute;
-  bottom: 0.2em;
+  bottom: 0.82em;
   left: 0.05em;
   background-color: rgba(0, 0, 0, 0.76);
   color: #fff;
@@ -489,9 +497,11 @@ main .container {
 /* .about-jws-container {
 
 } */
+.about-jws-container {
+  margin-top: 2rem;
+  /*   padding-top: 2em;
 
-.about-jws {
-  margin-top: 1.5rem;
+  border-top: 1px solid rgba(55, 52, 51, 0.267); */
 }
 
 .about-jws-container h1 {
@@ -500,6 +510,10 @@ main .container {
   font-family: sans-serif;
 
   margin-bottom: 0.25em;
+}
+
+.about-jws {
+  margin-top: 1.5rem;
 }
 
 .about {
@@ -512,7 +526,7 @@ main .container {
   font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
   font-weight: 100;
 
-  line-height: 1.6;
+  line-height: 1.5;
 
   margin-bottom: 1em;
   padding-right: 0.6rem;
@@ -541,8 +555,23 @@ footer .container .present {
   padding: 3.5em 0 0;
 }
 
+footer .container .present p {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+footer .container .present p span {
+  font-size: 1em;
+  font-weight: 100;
+}
+
 footer .container .flex {
   margin: 1.5em 0 0;
+}
+
+footer .quick-links p {
+  font-size: 0.93em;
+  font-weight: 0;
 }
 
 footer .container .flex .footer-links ul {

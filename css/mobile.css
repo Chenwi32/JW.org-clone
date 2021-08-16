@@ -112,16 +112,13 @@ header p {
   width: 40%;
 }
 
+.topics-cta .r-img img,
 .topics-cta .img img {
   width: 85%;
 }
 
 .topics-cta .r-img {
   width: 35%;
-}
-
-.topics-cta .r-img img {
-  width: 85%;
 }
 
 .online-bs-text {
@@ -162,6 +159,14 @@ footer .container > .flex {
 
 /*//////////////// Media Query ////////////////////////*/
 @media (max-width: 759px) {
+  .primary-links {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+
+  .secondary-links {
+    font-size: 1.15em;
+  }
   /*/////////////  Header Style /////////////*/
 
   .overlay-2 {
@@ -318,13 +323,66 @@ footer .container > .flex {
 
   /*///////////// Topics Section Style /////////////*/
 
+  .topic {
+    height: 100%;
+    min-height: 93px;
+  }
+
+  .topics-cta {
+    width: 100%;
+    margin: 0.1rem auto 0;
+  }
+
+  .topics-cta .img {
+    text-align: start;
+    width: 58%;
+    margin: 0 1rem;
+  }
+
+  .topics-cta .r-img {
+    text-align: start;
+    width: 53%;
+  }
+
+  .topics-cta .r-img img,
+  .topics-cta .img img {
+    width: 100%;
+  }
+
+  .online-bs-text {
+    text-align: left;
+    margin: 1.3rem 0 0;
+  }
+
+  .online-bs-text p {
+    font-size: 0.98em;
+    font-weight: 500;
+    padding: 0.5rem 0 0.5rem;
+    line-height: 1.3;
+  }
   /*///////////// End Topics Section Style /////////////*/
 
   /*///////////// Videos Section Style /////////////*/
 
+  .videos .trending .trending-link h2 a {
+    font-size: 1.2em;
+  }
+
+  .videos .trending .trending-link p {
+    font-size: 1.1em;
+  }
+
   .more-videos {
-    grid-template-columns: repeat(3, 1fr);
     overflow-x: scroll;
+  }
+
+  .more-videos .featured-item {
+    margin: 0.5em;
+  }
+
+  .more-videos .featured-item .img img {
+    min-height: 120px;
+    min-width: 240px;
   }
   /*///////////// End Videos Section Style /////////////*/
 
@@ -337,6 +395,26 @@ footer .container > .flex {
   .about-jws {
     flex-direction: column;
   }
+
+  .about-jws-container h1 {
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: sans-serif;
+
+    margin-bottom: 0.25em;
+  }
+
+  .about p {
+    font-size: 0.9em;
+    font-family: NotoSans, Arial, "Arial Unicode MS", sans-serif;
+    font-weight: 100;
+
+    line-height: 1.5;
+
+    margin-bottom: 0.5em;
+    padding-right: 0.6rem;
+  }
+
   /*///////////// End About JWs Section Style /////////////*/
 
   /*///////////// Footer Section Style /////////////*/
