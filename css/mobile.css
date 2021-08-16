@@ -539,6 +539,7 @@ footer .container > .flex {
   }
 
   .more-videos .featured-item .img img {
+    width: 95vw;
     min-height: 190px;
     min-width: 380px;
   }
