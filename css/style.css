@@ -455,10 +455,10 @@ main .container {
   /* display: -webkit-box; */
 
   overflow-x: hidden;
-  width: auto !important;
+  width: auto;
 
-  -webkit-transform: none !important;
-  transform: translate3d(0px, 0px, 0px);
+  /*   -webkit-transform: none !important;
+  transform: translate3d(0px, 0px, 0px); */
 
   flex-wrap: nowrap;
 }
