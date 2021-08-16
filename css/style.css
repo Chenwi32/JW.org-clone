@@ -236,6 +236,7 @@ main .container {
 
 .trending .trending-link {
   width: 84%;
+  margin: auto;
   height: fit-content;
   background-color: rgba(41, 41, 41, 0.918);
   color: #fff;

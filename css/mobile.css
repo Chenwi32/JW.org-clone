@@ -550,6 +550,7 @@ footer .container > .flex {
   } */
 
   .videos .trending .trending-link {
+    margin: auto;
     width: 90%;
   }
   /*//////////// End Videos /////////////////*/
