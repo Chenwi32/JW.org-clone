@@ -529,10 +529,15 @@ footer .container > .flex {
     background-size: 100% 100%;
   }
 
-  .more-videos .featured-item .img {
-    width: 19rem;
-    position: relative;
+  .more-videos .featured-item {
+    min-height: 250px;
   }
+
+  .more-videos .featured-item .img img {
+    min-height: 190px;
+    min-width: 380px;
+  }
+
   /*   .more-videos .featured-item .img img {
     width: 100%;
     position: relative;
