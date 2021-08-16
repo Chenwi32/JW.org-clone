@@ -489,6 +489,12 @@ footer .container > .flex {
   }
   /*//////////// End Trending /////////////////*/
 
+  .read-bible img {
+    margin: 0;
+    width: 50%;
+    height: 58%;
+  }
+
   .whats-new .btn {
     width: 100%;
     display: flex;
