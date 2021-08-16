@@ -383,6 +383,7 @@ footer .container > .flex {
   }
 
   .more-videos {
+    display: flex;
     overflow-x: scroll;
   }
 
