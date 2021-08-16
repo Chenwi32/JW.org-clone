@@ -489,6 +489,16 @@ footer .container > .flex {
   }
   /*//////////// End Trending /////////////////*/
 
+  .whats-new .btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .whats-new .btn .arrow {
+    font-size: 1.2em;
+    font-weight: 100;
+  }
+
   /*//////////// Topics /////////////////*/
   .topics .grid-3 {
     grid-template-columns: repeat(1, 1fr);
@@ -526,8 +536,7 @@ footer .container > .flex {
 
   .videos .trending {
     background-repeat: no-repeat;
-    background-position: 55% 10%;
-    background-size: 100% 100%;
+    object-fit: cover;
   }
 
   .more-videos {

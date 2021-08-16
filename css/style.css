@@ -11,6 +11,7 @@ body,
 html {
   height: 100%;
   background-color: #eceae7;
+  font-family: sans-serif;
 }
 
 img {
@@ -81,7 +82,7 @@ header p {
 
   font-size: 0.9em;
   font-weight: 300;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 .facilites .header-links span {
@@ -373,7 +374,7 @@ main .container {
 
 .topic h3 {
   font-size: 1.2em;
-  font-family: serif;
+  font-family: sans-serif;
   font-weight: 100;
 
   color: #fff;
@@ -433,8 +434,7 @@ main .container {
 
 .videos .trending {
   background-repeat: no-repeat;
-  background-position: 55% 1%;
-  background-size: 110% 148%;
+  object-fit: cover;
 }
 
 .videos .trending .trending-link {
