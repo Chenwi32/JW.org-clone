@@ -531,7 +531,8 @@ footer .container > .flex {
   }
 
   .more-videos {
-    width: auto;
+    width: fit-content;
+    justify-content: space-between;
   }
   .more-videos .featured-item {
     min-height: 250px;
