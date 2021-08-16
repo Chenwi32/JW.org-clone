@@ -529,6 +529,9 @@ footer .container > .flex {
     background-size: 100% 100%;
   }
 
+  .more-videos {
+    width: auto;
+  }
   .more-videos .featured-item {
     min-height: 250px;
   }
